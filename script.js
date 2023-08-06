@@ -1,17 +1,29 @@
+// $(document).ready(function () {
 
-var currentDay = document.getElementById("currentDay")
+//   const timeBlockEl = $(".time-block");
 
-const date = new Date();
+//   timeBlockEl.on('click', 'button', function () {
+//     const thisId = $(this).closest('.time-block').attr('id');
+//     const thisInput = $(this).siblings('.description');
+//     localStorage.setItem(thisId, thisInput.val());
+//   })
 
-let day = date.getDate();
-console.log(day);
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
+  
+  function displayDate() {
+    const currentDayEl = $("#currentDay")
+    currentDayEl.text(dayjs().format('MMMM DD, YYYY'));
+  }
+  displayDate()
+// }
 
-let currentDate = `${month}-${day}-${year}`;
-console.log(currentDate);
+// )
 
-document.getElementById("currentDay").innerHTML = currentDate;
+
+//make grey for past times
+//make red for present times
+//make green for future times
+//add a variable to make the colors show up according to system time
+
 
 
   // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
