@@ -1,6 +1,5 @@
 ## Work-Day-Scheduler
 
-```md
 Below is a link to my Work Day Scheduler. This scheduler will display a color based off the time of day. Grey is for the past, red is for the present, and green is for the future. When entering your notes in each time, you will be able to save the note and retrieve it later on!
 
 Link: https://github.com/Matthuu75/Work-Day-Scheduler
