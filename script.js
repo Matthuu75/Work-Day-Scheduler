@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   function displayDateTime() {
     const currentDayEl = $("#currentDay");
-    currentDayEl.text(dayjs().format('MMMM DD, YYYY h:mma'));
+    currentDayEl.text(dayjs().format('ddd, MMMM DD, YYYY h:mma'));
   }
 
   setInterval(displayDateTime, 1000);
