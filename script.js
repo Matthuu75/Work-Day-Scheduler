@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     hourTime = $(this).attr('id');
 
-    currentHour = dayjs().format('h');
+    currentHour = dayjs().format();
 
     if (hourTime < currentHour) {
       $(this).addClass('past');
