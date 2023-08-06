@@ -1,3 +1,4 @@
+//
 $(document).ready(function () {
   console.log("ready!")
 
@@ -10,9 +11,11 @@ $(document).ready(function () {
 
   timeBlock.each(function () {
 
-    hourTime = $(this).attr('id');
+    hourTime = $(this).attr('id').split('-')[1];
+    console.log(hourTime)
 
-    currentHour = dayjs().format();
+    currentHour = dayjs().hour();
+    console.log(currentHour)
 
     if (hourTime < currentHour) {
       $(this).addClass('past');
