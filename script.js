@@ -59,15 +59,15 @@ $(document).ready(function () {
   t11.value = getStorage;
   var getStorage = localStorage.getItem("hour-12");
   t12.value = getStorage;
-  var getStorage = localStorage.getItem("hour-1");
+  var getStorage = localStorage.getItem("hour-13");
   t1.value = getStorage;
-  var getStorage = localStorage.getItem("hour-2");
+  var getStorage = localStorage.getItem("hour-14");
   t2.value = getStorage;
-  var getStorage = localStorage.getItem("hour-3");
+  var getStorage = localStorage.getItem("hour-15");
   t3.value = getStorage;
-  var getStorage = localStorage.getItem("hour-4");
+  var getStorage = localStorage.getItem("hour-16");
   t4.value = getStorage;
-  var getStorage = localStorage.getItem("hour-5");
+  var getStorage = localStorage.getItem("hour-17");
   t5.value = getStorage;
 
   console.log(localStorage)
