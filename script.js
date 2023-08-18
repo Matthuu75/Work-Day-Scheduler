@@ -3,6 +3,7 @@ $(document).ready(function () {
   console.log("ready!")
 
   const timeBlock = $(".time-block");
+  
   timeBlock.on('click', 'button', function () {
     const thisId = $(this).closest('.time-block').attr('id');
     const thisDescription = $(this).siblings('.description');
@@ -33,15 +34,16 @@ $(document).ready(function () {
     }
 
     savedDescription = localStorage.getItem(hourTime);
-    $(this).find('.description').val(savedDescription)
-
-  })
+    $(this).find('.description').val(savedDescription);
+  });
 
   function displayDateTime() {
     const currentDayEl = $("#currentDay");
     currentDayEl.text(dayjs().format('ddd, MMMM DD, YYYY h:mma'));
-  }
+  };
+
+  console.log(localStorage);
 
   setInterval(displayDateTime, 1000);
 
-})
+});add
